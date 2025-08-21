@@ -1,0 +1,152 @@
+/* Custom CSS untuk aplikasi CRUD Mahasiswa */
+
+/* Styling untuk button aksi di table */
+.edit-btn, .delete-btn {
+    padding: 2px 8px;
+    margin: 1px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 11px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #4CAF50;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.delete-btn {
+    background-color: #f44336;
+}
+
+.delete-btn:hover {
+    background-color: #da190b;
+    transform: scale(1.05);
+}
+
+/* Header styling */
+.app-header h1 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+.app-header p {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+/* Form styling improvements */
+.webix_form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+.webix_ss_table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.webix_header_border .webix_hcell {
+    background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
+    border-bottom: 2px solid #dee2e6;
+    font-weight: bold;
+    color: #495057;
+}
+
+.webix_cell {
+    border-bottom: 1px solid #f1f3f4;
+}
+
+.webix_row_select {
+    background-color: #e3f2fd !important;
+}
+
+/* Toolbar styling */
+.webix_toolbar {
+    background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Button improvements */
+.webix_button.webix_primary {
+    background: linear-gradient(to bottom, #007bff 0%, #0056b3 100%);
+    border-color: #0056b3;
+}
+
+.webix_button.webix_primary:hover {
+    background: linear-gradient(to bottom, #0056b3 0%, #004085 100%);
+    transform: translateY(-1px);
+}
+
+/* Form validation styling */
+.webix_invalid {
+    border-color: #dc3545 !important;
+    background-color: #fff5f5 !important;
+}
+
+.webix_inp_focus {
+    border-color: #007bff !important;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25) !important;
+}
+
+/* Message styling */
+.webix_message_area {
+    z-index: 10000;
+}
+
+.webix_message {
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .app-header h1 {
+        font-size: 24px;
+    }
+    
+    .webix_form {
+        padding: 15px;
+    }
+    
+    .edit-btn, .delete-btn {
+        padding: 3px 6px;
+        font-size: 10px;
+    }
+}
+
+/* Loading animation */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.webix_loading {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+.webix_ss_vscroll, .webix_ss_hscroll {
+    background-color: #f8f9fa;
+}
+
+.webix_ss_vscroll_x, .webix_ss_hscroll_x {
+    background-color: #6c757d;
+    border-radius: 3px;
+}
+
+.webix_ss_vscroll_x:hover, .webix_ss_hscroll_x:hover {
+    background-color: #495057;
+}
